@@ -80,6 +80,19 @@ body{
 	border-color: $brltgrey;
 }
 
+/*buttons*/
+.btn-heading{
+	border-radius:25px;
+	padding: 10px 25px;
+	font-size: 1.7rem;
+	font-weight: 400;
+	letter-spacing: .2rem;
+}
+.btn-green{
+	background-color: $brgreen;
+	color: white;
+}
+
 .footer{
 	background-color: #434857;
 	color: $brltgrey;
