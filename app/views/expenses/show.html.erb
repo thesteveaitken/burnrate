@@ -1,0 +1,36 @@
+<p id="notice" ><%= notice %></p>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="rcp_outline">
+				<p class="text-center rcp_date">
+					<span class="glyphicon glyphicon-calendar"></span>
+				  <%= @expense.date %>
+				</p>
+
+				<p class="text-center rcp_amount">
+				  <%= number_to_currency(@expense.amount) %>
+				</p>
+				
+				<p class="text-center rcp_category">
+				  <%= @expense.category %>
+				</p>
+
+				<p class="text-center rcp_description">
+				  <%= @expense.description %>
+				</p>
+				<hr class="br_line">
+
+				<p class="text-center"><%= image_tag @expense.receipt.url(:medium) %></p><br>
+				<p class="text-center">
+				<%= link_to 'Edit', edit_expense_path(@expense), class: "btn btn-link" %> 
+				|
+				<%= link_to 'Back', expenses_path, class: "btn btn-link" %>
+				|
+				<%= link_to 'Delete', @expense, method: :delete, data: { confirm: 'Are you sure you want to delete this expense? It can not be undone.' }, class: "btn btn-link" %>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

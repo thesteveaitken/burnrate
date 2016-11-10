@@ -1,0 +1,90 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html{
+	font-size: 55%;
+}
+
+/* Theme font colors*/
+$broffwhite:#FCFCFD;
+$brltgrey:#7C7F87;
+$brgrey:#969697;
+$brdkgrey:#252830;
+$brblue:#1CA8DD;
+$brred:#E64759;
+$brgreen:#1BC98E; 
+$brpurple:#9F86FF;
+$bryellow:#E4D836; 
+
+body{
+	background-color: #252830;
+	color: $brltgrey;
+	font-weight: 200;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Gotham Rounded A,Gotham Rounded B,Helvetica Neue,Arial,sans-serif;
+	font-weight: 100;
+	margin-bottom: 2rem;
+	margin-top: 0;
+	color: $brltgrey;
+}
+h1{
+	font-size: 5.0rem;
+	color:white;
+}
+h2{
+	font-size: 4.2rem;
+}
+h3{
+	font-size: 3.6rem;
+}
+h4{
+	font-size: 3.0rem;
+}
+h5{
+	font-size: 2.4rem;
+}
+h6{
+	font-size: 1.5rem;
+}
+body{
+	font-size: 1.6rem;
+}
+
+/* Receipt show page*/
+.rcp_outline{
+	border: 2px solid $brblue;
+	border-radius: 10px;
+	padding: 25px 10px 10px 10px;
+}
+.rcp_date{
+	color:$broffwhite;
+	font-weight: lighter;
+}
+.rcp_amount{
+	color:$brblue;
+	font-size: 6.0rem;
+	font-weight: lighter;
+}
+.rcp_category{
+	color:$broffwhite;
+	font-size: 2.0rem;
+	font-weight: lighter;
+}
+.rcp_description{
+	color:$brltgrey;
+	font-weight: lighter;
+}
+.br_line{
+	border-color: $brltgrey;
+}
+
+.footer{
+	background-color: #434857;
+	color: $brltgrey;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 30px;
+}
